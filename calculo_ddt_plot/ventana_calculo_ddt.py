@@ -19,10 +19,7 @@ class Calculo_DDT:
         # build ui
          # Como StrinVar pero en entero
 
-
-
-
-        self.path = "archivos\lis_vhrfc_1998_2013_v01.2.nc"
+        self.path = "archivos/lis_vhrfc_1998_2013_v01.2.nc" # Corregido: Usar barras diagonales
 
         self.Toplevel1 = tk.Tk() if master is None else tk.Toplevel(master)
         self.retornar=retornar
@@ -31,6 +28,12 @@ class Calculo_DDT:
         self.Label50 = ttk.Label(self.Toplevel1)
         self.Label50.configure(text='Cálculo DDT')
         self.Label50.grid(column='0', pady='15', row='0', sticky='e')
+
+
+
+
+
+
 
         self.Radiobutton1 = ttk.Radiobutton(self.Toplevel1)
         self.Radiobutton1.configure(text='Cálculo DDT latitud y longitud', value=1, variable=self.opcion_radiobuttons)

@@ -576,7 +576,7 @@ class Principal_guiado(Panel):
 
         self.Frame9 = ttk.Frame(self.Notebook2)
         self.Label65 = ttk.Label(self.Frame9)
-        self.img_1 = tk.PhotoImage(file='archivos\plot.png')
+        self.img_1 = tk.PhotoImage(file=r'archivos\plot.png')
         self.Label65.configure(image=self.img_1, text='Label65')
         self.Label65.pack(padx='10', pady='10', side='top')
         self.Frame9.configure(height='200', width='480')
